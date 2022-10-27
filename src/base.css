@@ -1,0 +1,19 @@
+:root {
+    --opac-green-color: #0d8a7226;
+    --green-light-color: #0d8a72;
+    --green-color: #187260;
+    --just-white: white;
+    --just-gray: gray;
+    --light-gray: #e5e5e5;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+body {
+    background-color: var(--light-gray);
+}
