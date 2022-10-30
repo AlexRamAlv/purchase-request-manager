@@ -23,16 +23,20 @@ export default {
   <div :class="['modal-delete', { hide: !showModalProp }]">
     <div class="overlay" @click="toggleDeleteModalShow()"></div>
     <div class="main-modal-delete">
-      <span>Elimianr solicitante</span
-      ><span class="x" @click.stop="toggleDeleteModalShow()">x</span>
+      <div class="modal-title">
+        <span>Elimianr solicitante</span>
+      </div>
+      <span class="x" @click.stop="toggleDeleteModalShow()">x</span>
       <div class="message container">
-        <h4>Atención</h4>
+        <h4>Atención!</h4>
         <p>
-          Al borrar es solcitante <strong>{{ user.fullName }}</strong> se
-          eliminaran las solcitudes de compra asociadas a este
+          Si elimina el solcitante <strong>{{ user.fullName }}</strong> se
+          eliminarán las solcitudes de compra asociadas a este.
         </p>
-        <button>Confirmar</button>
-        <button @click="toggleDeleteModalShow()">Cancelar</button>
+        <button class="btn-confirm">Confirmar</button>
+        <button @click="toggleDeleteModalShow()" class="btn-cancel">
+          Cancelar
+        </button>
       </div>
     </div>
   </div>
@@ -50,8 +54,12 @@ export default {
   transform: translateY(0);
   transition: transform 0.3s ease;
 }
+.modal-title {
+  border-bottom: 0.5px solid var(--light-gray);
+  padding-bottom: 12px;
+}
 .main-modal-delete {
-  height: 160px;
+  height: 190px;
   width: fit-content;
   margin: 130px auto;
   background-color: white;
@@ -59,7 +67,15 @@ export default {
   border-radius: 5px;
   position: absolute;
   z-index: 4;
-  right: calc(50% - 365px);
+  right: 0;
+  left: 0;
+}
+h4 {
+  color: var(--danger);
+  margin: 10px 0;
+}
+.message.container > p {
+  margin: 10px;
 }
 .main-modal-delete button {
   margin: 10px;
@@ -71,14 +87,29 @@ export default {
   border: none;
 }
 .hide {
-  transform: translateY(665px);
+  transform: translateY(100%);
   opacity: 0;
   transition: all 0.3s ease;
 }
+.btn-confirm,
+.btn-cancel {
+  height: 45px;
+  width: 120px;
+  font-weight: 600;
+}
+button.btn-confirm {
+  background-color: transparent;
+  border: 1px solid var(--info);
+  color: var(--info);
+}
+button.btn-cancel {
+  background-color: var(--danger);
+  color: var(--just-white);
+}
 .x {
-  position: relative;
-  left: calc(100% - 135px);
-  bottom: 9px;
+  position: absolute;
+  left: calc(100% - 5%);
+  bottom: calc(100% - 40px);
   font-weight: bold;
   cursor: pointer;
   font-size: 25px;

@@ -64,11 +64,11 @@ const deleteRequester = (userInfo) => {
 <style>
 .card-container {
   display: grid;
-  grid-template-columns: 400px 400px;
-  grid-template-rows: 250px 250px;
-  justify-content: center;
-  width: 78vw;
+  grid-template-columns: auto;
+  grid-template-rows: 250px 230px 130px;
+  width: calc(100% - 265px);
   place-items: center;
+  place-content: center;
 }
 .pagination {
   grid-area: 3 / span 2;

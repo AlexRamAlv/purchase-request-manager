@@ -44,8 +44,8 @@ export default {
   width: 90%;
 }
 .main > span:hover {
-  background-color: var(--opac-green-color);
-  color: var(--green-color);
+  background-color: var(--primary-light);
+  color: var(--just-white);
   border-radius: 5px;
   cursor: pointer;
 }

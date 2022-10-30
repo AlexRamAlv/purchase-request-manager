@@ -39,14 +39,10 @@ export default {
     </div>
 
     <div class="actions">
-      <svg style="color: gray" id="edit-icon" class="edit-icon">
+      <svg id="edit-icon" class="edit-icon">
         <use href="/src/assets/icons/pencil-square.svg#pencil" />
       </svg>
-      <svg
-        @click="$emit('deleteClick')"
-        style="color: gray"
-        class="delete-icon"
-      >
+      <svg @click="$emit('deleteClick')" class="delete-icon">
         <use href="/src/assets/icons/trash-fill.svg#trash" />
       </svg>
     </div>
@@ -55,11 +51,11 @@ export default {
 <style scoped>
 .requester-card {
   background-color: var(--just-white);
-  height: 205px;
+  height: 190px;
   border: 0.5px solid rgb(1 1 1 / 21%);
   border-radius: 18px;
-  margin: 40px 20px;
-  width: 350px;
+  margin: 15px;
+  width: 335px;
   box-shadow: 0 0 10px 1px rgb(0 0 0 / 10%);
   position: relative;
   display: grid;
@@ -102,17 +98,17 @@ export default {
   place-self: center;
 }
 .btn-info {
-  border: 1px solid var(--green-color);
-  color: var(--green-color);
-  background-color: var(--opac-green-color);
+  border: 1px solid var(--primary);
+  color: var(--primary);
+  background-color: transparent;
   text-decoration: none;
   text-align: center;
   padding: 12px;
 }
-.btn-info:hover {
+/* .btn-info:hover {
   color: var(--just-white);
-  background-color: var(--green-color);
-}
+  background-color: var(--primary);
+} */
 .requester-card .btn-info {
   grid-row: 3;
   grid-column: 2;
@@ -138,6 +134,7 @@ export default {
   justify-content: end;
   align-self: baseline;
   margin: 10px 10px 0 0;
+  color: var(--just-gray);
 }
 .edit-icon,
 .delete-icon {

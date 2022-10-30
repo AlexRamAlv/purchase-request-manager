@@ -74,14 +74,14 @@ nav {
   margin: 4px 10px;
 }
 .navbar-right {
-  background-color: var(--green-light-color);
+  background-color: var(--primary);
   color: white;
 }
 .navbar-left {
   margin-right: 10px;
   display: flex;
   align-items: center;
-  border-left: 1px solid var(--green-color);
+  border-left: 1px solid var(--primary-light);
 }
 .navbar-left .profile-img {
   margin-left: 10px;
@@ -104,7 +104,6 @@ nav {
 .navbar-left .icon-profile-menu {
   margin: 4px;
   cursor: pointer;
-  /* transform: rotate(0); */
   transition: transform 0.5s ease;
 }
 .rotate_arrow {
@@ -121,14 +120,11 @@ nav {
   font-weight: 600;
   letter-spacing: 0.5px;
 }
-nav a.router-link-exact-active {
-  color: var(--color-text);
-}
 .menu {
   cursor: pointer;
   height: 100%;
-  border-right: 1px solid var(--green-color);
-  border-left: 1px solid var(--green-color);
+  border-right: 1px solid var(--primary-light);
+  border-left: 1px solid var(--primary-light);
   display: flex;
   padding: 10px;
   fill: var(--just-white);

@@ -35,6 +35,7 @@ export default {
 <style scoped>
 .main-content {
   display: flex;
+  justify-content: space-between;
 }
 .adjust-screen {
   width: 100vw;

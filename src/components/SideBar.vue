@@ -64,6 +64,7 @@ ul li a {
 }
 .list-container {
   background-color: var(--just-white);
+  box-shadow: 14px 19px 44px -17px rgba(82, 82, 82, 0.45);
   width: 265px;
   height: calc(100vh - 45px);
   transition: transform 0.3s ease;
@@ -76,8 +77,8 @@ ul li a {
   align-items: center;
 }
 .list-container--text:hover {
-  background-color: var(--opac-green-color);
-  color: var(--green-light-color);
+  background-color: var(--primary);
+  color: var(--just-white);
   border-radius: 5px;
 }
 .list-container--icon {
@@ -87,15 +88,15 @@ ul li a {
   fill: currentColor;
 }
 a.router-link-exact-active {
-  background-color: var(--opac-green-color);
-  color: var(--green-light-color);
+  background-color: var(--primary-light);
+  color: var(--just-white);
   border-radius: 5px;
 }
 /* Animation */
 .show-sidebar {
   position: absolute;
   z-index: 1;
-  transform: translate(-270px, 0);
+  transform: translate(-330px, 0);
   transition: all 0.3s ease;
 }
 </style>

@@ -5,6 +5,15 @@
     --just-white: white;
     --just-gray: gray;
     --light-gray: #e5e5e5;
+    /* variables */
+    --primary: #d13144;
+    --primary-light: #ff4e63;
+    --info: #28282d;
+    --danger: #f44336;
+    --default: #999999;
+    --success: #3db569;
+    --warning: #bba531;
+    --backgound-color: #EEFCF2;
 }
 
 * {
@@ -15,5 +24,5 @@
 }
 
 body {
-    background-color: var(--light-gray);
+    background-color: var(--backgound-color);
 }

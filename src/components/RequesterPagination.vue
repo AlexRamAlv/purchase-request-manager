@@ -13,7 +13,7 @@
 </template>
 <style scoped>
 .arrow {
-  background-color: var(--green-color);
+  background-color: var(--primary);
   color: var(--just-white);
   border-radius: 50%;
   width: 35px;
@@ -44,12 +44,12 @@
   align-items: center;
 }
 .numbers span:hover {
-  background-color: var(--green-color);
+  background-color: var(--primary);
   border-radius: 5px;
   color: var(--just-white);
 }
 .exact-page {
-  background-color: var(--green-color);
+  background-color: var(--primary);
   border-radius: 5px;
   color: var(--just-white);
 }
